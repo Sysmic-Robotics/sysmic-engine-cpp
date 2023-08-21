@@ -29,6 +29,11 @@ La carpeta libs contiene todos los componentes, donde cada componente sigue la s
 └── tools
 ```
 
+## Requirements
+Para la correcta ejecución del programa se necesita:
+* [Qt 6.5 or newer](https://doc.qt.io/qt-6/linux-building.html)
+
+
 ## Build
 Permite buildear y compilar el proyecto
 ```

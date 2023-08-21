@@ -9,11 +9,16 @@ target_include_directories(Vision
     ${CMAKE_CURRENT_SOURCE_DIR}/../external/proto_compiled)
 
 find_package(Qt6 REQUIRED COMPONENTS Network)
-target_link_libraries(Vision PRIVATE Qt6::Network)
+target_link_libraries(Vision PUBLIC Qt6::Network)
 
-add_executable(main main.cpp)
+qt_standard_project_setup()
+
+qt_add_executable(main
+    main.cpp
+)
 
 target_link_libraries(main
     PRIVATE
     Vision
 )
+
