@@ -32,3 +32,7 @@ void Vision::processPendingDatagrams(){
         qDebug() <<"Message :: " << datagram;
     }
 }
+
+int suma(int a, int b){
+    return a + b;
+}

@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 3.27)
 
-project(SysmicEngine
+project(sysmic
         VERSION 1.0.0
         LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(libs/vision)
-#añadir el resto de subdirectorios
+# Set Qt installation path. Must be changed computer to computer
+set(CMAKE_PREFIX_PATH "/usr/local/Qt/bin")
 
+find_package(Qt6 REQUIRED COMPONENTS Network)
+qt_standard_project_setup()
 
-#Target
-#add_executable(SysmicEngineBinary main.cpp)
-#target_compile_features(SysmicEngineBinary PRIVATE cxx_std_23)
+add_subdirectory(libs)

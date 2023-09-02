@@ -35,7 +35,9 @@ Para la correcta ejecución del programa se necesita:
 
 
 ## Build
-Permite buildear y compilar el proyecto
+Se debe modificar `CMAKE_PREFIX_PATH` a la ruta de instalación de Qt.
+
+A continuación, estos comandos permiten buildear y compilar el proyecto
 ```
 mkdir build
 cd build

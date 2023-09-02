@@ -1,1 +1,1 @@
-project(SysmicEngine)
+project(sysmic)

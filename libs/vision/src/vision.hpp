@@ -2,7 +2,7 @@
 #define VISION_H
 #include <QUdpSocket>
 #include <QObject>
-#include "messages_robocup_ssl_wrapper.pb.h"
+#include "../external/proto_compiled/messages_robocup_ssl_wrapper.pb.h"
 
 class Vision: public QObject{
     Q_OBJECT
@@ -17,5 +17,7 @@ class Vision: public QObject{
     private:
         QUdpSocket *socket=nullptr;
 };
+
+int suma(int a, int b);
 
 #endif
