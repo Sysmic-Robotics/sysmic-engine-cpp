@@ -31,7 +31,8 @@ La carpeta libs contiene todos los componentes, donde cada componente sigue la s
 
 ## Requirements
 Para la correcta ejecución del programa se necesita:
-* [Qt 6.5 or newer](https://doc.qt.io/qt-6/linux-building.html)
+* [CMake](https://cmake.org/install/)
+* [Qt 6.5 or newer](https://wiki.qt.io/Building_Qt_6_from_Git)
 
 
 ## Build
